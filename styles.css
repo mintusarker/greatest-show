@@ -1,13 +1,15 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0%;
 }
+
 /* ----top section----- */
-h1{
+h1 {
     font-size: 50px;
     color: white;
 }
-.link-button{
+
+.link-button {
     text-decoration: none;
     padding: 15px 40px;
     background-color: red;
@@ -15,7 +17,8 @@ h1{
     font-weight: 700;
     border-radius: 5px;
 }
-.top-section{
+
+.top-section {
     display: flex;
     justify-content: space-between;
     background-color: black;
@@ -25,24 +28,29 @@ h1{
     padding-right: 100px;
     transition-duration: 3s;
 }
-.top-section:hover{
+
+.top-section:hover {
     background-color: yellowgreen;
 }
-.top-part{
+
+.top-part {
     color: white;
 }
-.picture img{
+
+.picture img {
     width: 100%;
-    height: 100% ;
+    height: 100%;
 }
-nav{
+
+nav {
     padding: 50px 100px;
 }
+
 /* ---button section----- */
-.button{
+.button {
     text-decoration: none;
     width: 65%;
-    height: 35px;
+    height: 25px;
     color: black;
     background-color: silver;
     border-radius: 8px;
@@ -50,7 +58,7 @@ nav{
     padding-right: 20px;
 }
 
-.button-part{
+.button-part {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
@@ -60,30 +68,32 @@ nav{
     height: 200px;
     background-color: rgb(85, 105, 46);
     border-radius: 10px;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 25px;
     padding-right: 0px;
 }
 
-.live-button{
+.live-button {
     text-decoration: none;
     width: 65%;
-    height: 25px;
+    height: 35px;
     color: black;
     background-color: red;
     font-weight: 700;
     border-radius: 8px;
     padding: 15px 20px;
 }
+
 /* play shedule, time,date */
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    grid-column-gap:30px;
-    grid-row-gap:50px
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px
 }
-.block-info{
+
+.block-info {
     border: 1px solid silver;
     border-radius: 8px;
     width: 250px;
@@ -92,113 +102,135 @@ nav{
     padding-left: 40px;
     padding-right: 30px;
 }
-.flag-info{
+
+.flag-info {
     display: flex;
     padding-right: 100px;
-    gap:20px;
-    border: 1px solid whitesmoke;
+    gap: 20px;
 }
-.style{ 
-padding-top: 15px;
+
+.style {
+    padding-top: 15px;
 }
-.country .time{
+
+.country .time {
     text-align: center;
 }
-.second-part{
+
+.second-part {
     display: flex;
     gap: 50px;
     padding-left: 100px;
     padding-right: 100px;
 
 }
-.icon-info{
+
+.icon-info {
     display: flex;
     justify-content: start;
     gap: 50px;
 }
 
-.first-icon, .second-icon{
+.first-icon,
+.second-icon {
     display: flex;
     gap: 10px;
 }
+
 /* --fotter section--- */
-.foot-style{
+.foot-style {
     text-align: center;
     font-size: 30px;
     padding-top: 100px;
 }
-.foot{
+
+.foot {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
+    ;
     gap: 50px;
 }
-.hr-foot{
+
+.hr-foot {
     width: 80%;
     border: 1px solid rgb(66, 63, 63);
 }
-.footer{
+
+.footer {
     height: 100%;
     margin-top: 100px;
     background-color: black;
     color: whitesmoke;
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
 }
+
 /*------ reponsive for mobile---- */
 
 @media only screen and (max-width: 576px) {
-    .top-section{
+    .top-section {
         height: 100%;
         width: 100%;
         gap: 50px;
     }
-    .top-section{
+
+    .top-section {
         flex-direction: column;
     }
-    .second-part{
-       width: 100%;
+
+    .second-part {
+        width: 50%;
     }
-    .second-part{
+
+    .second-part {
         flex-direction: column;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    #view-button{
-        display: none;
-    }
-    .foot{
+
+    .foot {
         flex-direction: column;
         text-align: center;
-        
+
     }
 }
+
 /* ---responsive for tablet---- */
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-    .top-section{
+    .top-section {
         height: 100%;
         width: 100%;
         gap: 50px;
     }
-    .top-section{
+
+    .top-section {
         flex-direction: column;
     }
-    .second-part{
+
+    .second-part {
         width: 100%;
-     }
-     .second-part{
-         flex-direction: column;
-     }
-     .grid{
-         grid-template-columns: repeat(2, 1fr);
-     }
-     .foot{
+    }
+
+    .second-part {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding-right: 200px;
+    }
+
+    .foot {
         text-align: center;
         gap: 10px;
-     }
+    }
 }

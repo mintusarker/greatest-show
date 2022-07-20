@@ -1,6 +1,5 @@
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0%;
 }
 /* ---top section----- */
 h1{
@@ -43,13 +42,14 @@ nav{
 .button{
     text-decoration: none;
     width: 65%;
-    height: 35px;
+    height: 25px;
     color: black;
     background-color: whitesmoke;
     font-weight: 700;
     border-radius: 8px;
     padding: 15px 20px;
     padding-right: 20px;
+    padding-bottom: 25px;
 }
 
 .button-part{
@@ -58,13 +58,13 @@ nav{
     gap: 15px;
     justify-content: center;
     text-align: center;
-    width: 900px;
+    width: 500px;
     height: 200px;
     background-color: #587186;
     border-radius: 10px;
     padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-left: 25px;
 }
 
 .live-button{
@@ -150,7 +150,7 @@ nav{
 }
 /* ---responsive for mobile---- */
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) { 
     .top-section{
         height: 100%;
         width: 100%;
@@ -181,7 +181,7 @@ nav{
         
     }
 }
-/* ---reponsive for table-----*/
+/* ---reponsive for tablet-----*/
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     .top-section{
@@ -193,13 +193,17 @@ nav{
         flex-direction: column;
     }
     .second-part{
-        width: 100%;
+        width: 70%;
      }
      .second-part{
          flex-direction: column;
      }
+     .button-part{
+        padding-left: 100px;
+     }
      .grid{
          grid-template-columns: repeat(2, 1fr);
+         justify-content: center;
      }
      .foot{
         text-align: center;
