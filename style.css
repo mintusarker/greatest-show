@@ -1,45 +1,53 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
+
 /* ---top section----- */
-h1{
+h1 {
     font-size: 50px;
     color: white;
 }
-.link-button{
+
+.link-button {
     text-decoration: none;
     padding: 15px 40px;
-    background-image: linear-gradient(tomato, red);  
+    background-image: linear-gradient(tomato, red);
     color: white;
     font-weight: 700;
     border-radius: 5px;
 }
-.top-section{
+
+.top-section {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    height: 500px;
+    height: 550px;
     border-radius: 30px;
     padding-left: 100px;
     padding-right: 100px;
     transition-duration: 3s;
     transition-timing-function: linear;
 }
-.top-section:hover{
+
+.top-section:hover {
     background-color: skyblue;
 }
-.top-part{
+
+.top-part {
     color: white;
 }
-.picture img{
+
+.picture img {
     width: 100%;
-    height: 100% ;
+    height: 100%;
 }
-nav{
+
+nav {
     padding: 50px 100px;
 }
+
 /* ----button section----- */
-.button{
+.button {
     text-decoration: none;
     width: 65%;
     height: 25px;
@@ -52,7 +60,7 @@ nav{
     padding-bottom: 25px;
 }
 
-.button-part{
+.button-part {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
@@ -67,7 +75,7 @@ nav{
     padding-left: 25px;
 }
 
-.live-button{
+.live-button {
     text-decoration: none;
     width: 65%;
     height: 25px;
@@ -77,18 +85,21 @@ nav{
     padding: 15px 20px;
     background-image: linear-gradient(tomato, red);
 }
+
 /* ---transfer live section---- */
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    grid-column-gap:30px;
-    grid-row-gap:50px
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px
 }
-.block-info{
+
+.block-info {
     border: 1px solid whitesmoke;
     width: 310px;
 }
-.second-part{
+
+.second-part {
     display: flex;
     gap: 50px;
     padding-left: 100px;
@@ -96,18 +107,21 @@ nav{
     margin-top: 50px;
 
 }
-.icon-info{
+
+.icon-info {
     display: flex;
     justify-content: start;
     gap: 50px;
 }
 
-.first-icon, .second-icon{
+.first-icon,
+.second-icon {
     display: flex;
     gap: 10px;
 }
+
 /* ----view button---- */
-.veiw{
+.veiw {
     text-decoration: none;
     width: 65%;
     height: 25px;
@@ -116,99 +130,119 @@ nav{
     border-radius: 8px;
     padding: 15px 20px;
     background-image: linear-gradient(tomato, red);
-} 
-#view-button{
+}
+
+#view-button {
     text-align: center;
     margin-top: 100px;
 }
+
 /* ----footer section----- */
-.foot-style{
+.foot-style {
     text-align: center;
     font-size: 30px;
     padding-top: 100px;
 }
-.foot{
+
+.foot {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
+    ;
     gap: 50px;
 }
-.hr-foot{
+
+.hr-foot {
     width: 80%;
     border: 1px solid rgb(66, 63, 63);
 }
-.footer{
+
+.footer {
     height: 350%;
     margin-top: 100px;
     background-color: black;
     color: whitesmoke;
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 30px;;
+    margin-top: 30px;
+    ;
 }
+
 /* ---responsive for mobile---- */
 
-@media only screen and (max-width: 576px) { 
-    .top-section{
+@media only screen and (max-width: 576px) {
+    .top-section {
         height: 100%;
         width: 100%;
         gap: 50px;
     }
-    .top-section{
+
+    .top-section {
         flex-direction: column;
     }
-    .button-part{
+
+    .button-part {
         width: 50%;
     }
 
-    .second-part{
-       width: 100%;
+    .second-part {
+        width: 100%;
     }
-    .second-part{
+
+    .second-part {
         flex-direction: column;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    #view-button{
+
+    #view-button {
         display: none;
     }
-    .foot{
+
+    .foot {
         flex-direction: column;
         text-align: center;
-        
+
     }
 }
+
 /* ---reponsive for tablet-----*/
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-    .top-section{
+    .top-section {
         height: 100%;
         width: 100%;
         gap: 50px;
     }
-    .top-section{
+
+    .top-section {
         flex-direction: column;
     }
-    .second-part{
+
+    .second-part {
         width: 70%;
-     }
-     .second-part{
-         flex-direction: column;
-     }
-     .button-part{
+    }
+
+    .second-part {
+        flex-direction: column;
+    }
+
+    .button-part {
         padding-left: 100px;
-     }
-     .grid{
-         grid-template-columns: repeat(2, 1fr);
-         justify-content: center;
-     }
-     .foot{
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .foot {
         text-align: center;
         gap: 10px;
-     }
+    }
 }
-    
-
